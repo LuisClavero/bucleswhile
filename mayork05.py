@@ -1,5 +1,8 @@
 #coding: utf-8
-num1=input("Introduce un numero:")
+num1=int(input("Introduce un numero:"))
+num2=0
 while num1>0:
-	num2=input("Introduce otro numero:")	
-print "La suma de los numeros positivos es:", num1+num2
+	num2+=num1
+	num1=int(input("Introduce otro numero:"))	
+print "La suma de los numeros positivos es:",str(num2)+"."
+print "Programa terminado"

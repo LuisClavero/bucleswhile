@@ -1,13 +1,16 @@
 #coding: utf-8
-cont=0
-suma=0
 x=float(input("introduce un numero:"))
+suma=0
+cont=0
 while (x<=0):
 	x=float(input("Error, introduce otro:"))
-
-else:		
+while (x>cont):		
 	aux=float(input("introduce otro numero:"))
 	if aux>0:
+		cont+=x
 		suma=suma+aux
-		if suma>=x:
-			print "Programa terminado, la suma es igual o ha superado",x
+	else:
+		cont+=0
+	if suma>=x:
+		print "La suma de los numeros introducidos supera",x,"y es",suma
+print "Programa terminado"
