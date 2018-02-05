@@ -1,12 +1,10 @@
 #coding: utf-8
 limite= float(input("Escriba el valor límite:"))
+suma=0
 while limite<=0:
     limite=float(input("El límite debe ser mayor que 0. Inténtelo de nuevo:"))
-x=float(input("Escriba un número:"))
-suma=0
-suma+=x
 while suma<limite:
-    x= float(input("Escriba otro número:"))
-    suma+=x
-print "Ha superado el límite. La suma de los números positivos introducidos es",str(suma)+"." 
+    aux= float(input("Escriba otro número:"))
+    suma=suma+aux
+print "Ha superado el límite. La suma es:",suma
 print "Programa terminado."
